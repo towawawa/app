@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>トリミング記録 - 法的情報</title>
+    <title>トリミング記録 - サポート</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -12,34 +12,31 @@
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 20px;
         }
         .container {
-            max-width: 500px;
+            max-width: 600px;
+            margin: 0 auto;
             background: #fff;
             padding: 40px;
             border-radius: 16px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            text-align: center;
         }
-        h1 {
-            font-size: 1.5rem;
-            margin-bottom: 8px;
-            color: #1a1a1a;
+        h1 { font-size: 1.5rem; margin-bottom: 8px; color: #1a1a1a; text-align: center; }
+        .subtitle { color: #666; margin-bottom: 30px; text-align: center; }
+        .emoji { font-size: 3rem; text-align: center; margin-bottom: 16px; }
+        h2 { font-size: 1.2rem; margin: 24px 0 12px; color: #667eea; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        .contact {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 10px;
+            margin-top: 24px;
         }
-        .subtitle {
-            color: #666;
-            margin-bottom: 30px;
-        }
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        a {
+        .contact a { color: #667eea; }
+        .links { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+        .links a {
             display: block;
             padding: 16px 24px;
             background: #f8f9fa;
@@ -48,17 +45,37 @@
             border-radius: 10px;
             font-weight: 500;
             transition: all 0.2s;
+            text-align: center;
         }
-        a:hover {
-            background: #e9ecef;
-            transform: translateY(-2px);
-        }
+        .links a:hover { background: #e9ecef; transform: translateY(-2px); }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🐾 トリミング記録</h1>
-        <p class="subtitle">法的情報</p>
+        <div class="emoji">✂️🐕</div>
+        <h1>トリミング記録</h1>
+        <p class="subtitle">愛犬のトリミングを美しく記録</p>
+        
+        <h2>📱 主な機能</h2>
+        <ul>
+            <li>トリミング前後の写真を最大3枚まで登録</li>
+            <li>日付ごとにトリミング履歴を管理</li>
+            <li>コメントでスタイルや気づきをメモ</li>
+            <li>過去の記録を一覧で確認</li>
+        </ul>
+        
+        <h2>❓ よくある質問</h2>
+        <ul>
+            <li><strong>写真が保存できない場合</strong><br>「設定」→「プライバシー」→「写真」から本アプリのアクセスを許可してください。</li>
+            <li><strong>過去の記録を削除したい</strong><br>記録一覧で左スワイプすると削除できます。</li>
+        </ul>
+        
+        <div class="contact">
+            <strong>お問い合わせ</strong><br>
+            ご質問やご要望は下記メールまでお願いします：<br>
+            <a href="mailto:timamoto@imamoto-lab.com">timamoto@imamoto-lab.com</a>
+        </div>
+        
         <div class="links">
             <a href="terms.html">📄 利用規約</a>
             <a href="privacy-policy.html">🔒 プライバシーポリシー</a>

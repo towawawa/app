@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>名言カレンダー - 法的情報</title>
+    <title>名言カレンダー - サポート</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -12,23 +12,31 @@
             color: #333;
             background: linear-gradient(135deg, #AF52DE 0%, #5856D6 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 20px;
         }
         .container {
-            max-width: 500px;
+            max-width: 600px;
+            margin: 0 auto;
             background: #fff;
             padding: 40px;
             border-radius: 16px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-            text-align: center;
         }
-        h1 { font-size: 1.5rem; margin-bottom: 8px; color: #1a1a1a; }
-        .subtitle { color: #666; margin-bottom: 30px; }
-        .links { display: flex; flex-direction: column; gap: 12px; }
-        a {
+        h1 { font-size: 1.5rem; margin-bottom: 8px; color: #1a1a1a; text-align: center; }
+        .subtitle { color: #666; margin-bottom: 30px; text-align: center; }
+        .emoji { font-size: 3rem; text-align: center; margin-bottom: 16px; }
+        h2 { font-size: 1.2rem; margin: 24px 0 12px; color: #AF52DE; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 8px; }
+        .contact {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 10px;
+            margin-top: 24px;
+        }
+        .contact a { color: #AF52DE; }
+        .links { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+        .links a {
             display: block;
             padding: 16px 24px;
             background: #f8f9fa;
@@ -37,14 +45,37 @@
             border-radius: 10px;
             font-weight: 500;
             transition: all 0.2s;
+            text-align: center;
         }
-        a:hover { background: #e9ecef; transform: translateY(-2px); }
+        .links a:hover { background: #e9ecef; transform: translateY(-2px); }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📖 名言カレンダー</h1>
-        <p class="subtitle">法的情報</p>
+        <div class="emoji">📖✨</div>
+        <h1>名言カレンダー</h1>
+        <p class="subtitle">毎日の名言であなたの心に火を灯す</p>
+        
+        <h2>📱 主な機能</h2>
+        <ul>
+            <li>日替わりで届く心に響く名言</li>
+            <li>カレンダー形式で過去の名言を振り返り</li>
+            <li>その日の気づきをジャーナルとして記録</li>
+            <li>シンプルで美しいデザイン</li>
+        </ul>
+        
+        <h2>❓ よくある質問</h2>
+        <ul>
+            <li><strong>毎日違う名言が見れる？</strong><br>はい、日付ごとに異なる名言が表示されます。</li>
+            <li><strong>ジャーナルは保存される？</strong><br>アプリ内に自動保存され、カレンダーからいつでも確認できます。</li>
+        </ul>
+        
+        <div class="contact">
+            <strong>お問い合わせ</strong><br>
+            ご質問やご要望は下記メールまでお願いします：<br>
+            <a href="mailto:timamoto@imamoto-lab.com">timamoto@imamoto-lab.com</a>
+        </div>
+        
         <div class="links">
             <a href="terms.html">📄 利用規約</a>
             <a href="privacy-policy.html">🔒 プライバシーポリシー</a>
