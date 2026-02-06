@@ -164,6 +164,24 @@ APPS = {
         "title_color": (0, 0, 0),
         "stroke_color": (255, 255, 255),
         "layout": "single"
+    },
+    "hotcook-recipe": {
+        "title": "ホットクックレシピ",
+        "captions": [
+            {"text": "ホットクックのレシピを検索！", "highlight": ["ホットクック"]},
+            {"text": "番号をわかりやすく表示", "highlight": ["番号"]},
+            {"text": "材料、手順も確認", "highlight": ["材料", "手順"]},
+            {"text": "豊富な絞り込み検索", "highlight": ["絞り込み"]},
+            {"text": "ホットクックの全レシピ掲載", "highlight": ["全レシピ"]},
+            {"text": "レシピから一括で買い物リスト", "highlight": ["一括で"]},
+            {"text": "ホットクック部も確認可能", "highlight": ["ホットクック部"]}
+        ],
+        "bg_color": (255, 255, 255),  # 白背景
+        "text_color": (0, 0, 0),
+        "highlight_color": (0, 122, 255),  # 青でハイライト
+        "title_color": (0, 0, 0),
+        "stroke_color": (255, 255, 255),
+        "layout": "single"
     }
 }
 
@@ -692,3 +710,4 @@ if __name__ == "__main__":
     process_app("screenshot-poi")
     process_app("aquarium-note")
     process_app("work-quest")
+    process_app("hotcook-recipe")
