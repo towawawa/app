@@ -165,6 +165,20 @@ APPS = {
         "stroke_color": (255, 255, 255),
         "layout": "single"
     },
+    "fire-plan": {
+        "title": "FIRE計画",
+        "captions": [
+            {"text": "FIREまでの進捗を一目で確認", "highlight": ["FIRE"]},
+            {"text": "資産推移もまとめて確認", "highlight": ["資産推移"]},
+            {"text": "定期的に記録", "highlight": ["記録"]}
+        ],
+        "bg_color": (255, 255, 255),
+        "text_color": (0, 0, 0),
+        "highlight_color": (255, 149, 0),
+        "title_color": (0, 0, 0),
+        "stroke_color": (255, 255, 255),
+        "layout": "single"
+    },
     "hotcook-recipe": {
         "title": "ホットクックレシピ",
         "captions": [
@@ -711,3 +725,4 @@ if __name__ == "__main__":
     process_app("aquarium-note")
     process_app("work-quest")
     process_app("hotcook-recipe")
+    process_app("fire-plan")
