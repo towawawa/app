@@ -179,6 +179,21 @@ APPS = {
         "stroke_color": (255, 255, 255),
         "layout": "single"
     },
+    "sns-recipe-memo": {
+        "title": "SNSレシピメモ",
+        "captions": [
+            {"text": "SNSで見たレシピを保存", "highlight": ["SNS"]},
+            {"text": "食材などのメモも可能", "highlight": ["メモ"]},
+            {"text": "料理記録を保存", "highlight": ["料理記録"]},
+            {"text": "買い物リストの登録", "highlight": ["買い物リスト"]}
+        ],
+        "bg_color": (255, 255, 255),
+        "text_color": (0, 0, 0),
+        "highlight_color": (239, 122, 43),
+        "title_color": (0, 0, 0),
+        "stroke_color": (255, 255, 255),
+        "layout": "single"
+    },
     "hotcook-recipe": {
         "title": "ホットクックレシピ",
         "captions": [
@@ -193,6 +208,85 @@ APPS = {
         "bg_color": (255, 255, 255),  # 白背景
         "text_color": (0, 0, 0),
         "highlight_color": (0, 122, 255),  # 青でハイライト
+        "title_color": (0, 0, 0),
+        "stroke_color": (255, 255, 255),
+        "layout": "single"
+    },
+    "delivery-countdown": {
+        "title": "納車日カウントダウン",
+        "captions": [
+            {"text": "納車日まであと何日か一目で確認", "highlight": ["納車日", "何日"]},
+            {"text": "ウィジェット対応！", "highlight": ["ウィジェット"]},
+            {"text": "走行記録をまとめて確認！", "highlight": ["走行記録", "まとめて"]},
+            {"text": "写真付きでドライブ記録を保存", "highlight": ["写真付き", "保存"]},
+            {"text": "カレンダーで日記も確認！", "highlight": ["カレンダー", "日記"]}
+        ],
+        "bg_color": (255, 255, 255),
+        "text_color": (0, 0, 0),
+        "highlight_color": (0, 122, 255),
+        "title_color": (0, 0, 0),
+        "stroke_color": (255, 255, 255),
+        "layout": "single"
+    },
+    "eiken-countdown": {
+        "title": "英検カウントダウン",
+        "captions": [
+            {"text": "英検まであと何日か一目で確認", "highlight": ["英検", "何日"]},
+            {"text": "ウィジェットでホーム画面から確認", "highlight": ["ウィジェット"]},
+            {"text": "累計勉強時間をグラフで可視化", "highlight": ["グラフ"]},
+            {"text": "勉強時間と日記を記録", "highlight": ["勉強時間", "日記"]},
+            {"text": "カレンダーで学習の記録を確認", "highlight": ["カレンダー"]}
+        ],
+        "bg_color": (255, 255, 255),
+        "text_color": (0, 0, 0),
+        "highlight_color": (0, 122, 255),
+        "title_color": (0, 0, 0),
+        "stroke_color": (255, 255, 255),
+        "layout": "single"
+    },
+    "kanken-countdown": {
+        "title": "漢検カウントダウン",
+        "captions": [
+            {"text": "漢検まであと何日か一目で確認", "highlight": ["漢検", "何日"]},
+            {"text": "ウィジェットでホーム画面から確認", "highlight": ["ウィジェット"]},
+            {"text": "累計勉強時間をグラフで可視化", "highlight": ["グラフ"]},
+            {"text": "勉強時間と日記を記録", "highlight": ["勉強時間", "日記"]},
+            {"text": "カレンダーで学習の記録を確認", "highlight": ["カレンダー"]}
+        ],
+        "bg_color": (255, 255, 255),
+        "text_color": (0, 0, 0),
+        "highlight_color": (200, 40, 40),
+        "title_color": (0, 0, 0),
+        "stroke_color": (255, 255, 255),
+        "layout": "single"
+    },
+    "credit-card-reminder": {
+        "title": "クレカリマイン",
+        "captions": [
+            {"text": "引き落としまであと何日か一目で確認", "highlight": ["引き落とし", "何日"]},
+            {"text": "カレンダーで引き落とし予定を一覧", "highlight": ["カレンダー", "引き落とし"]},
+            {"text": "主要15社のカードをワンタップ登録", "highlight": ["15社", "ワンタップ"]},
+            {"text": "ウィジェットでホーム画面から確認", "highlight": ["ウィジェット"]}
+        ],
+        "bg_color": (255, 255, 255),
+        "text_color": (0, 0, 0),
+        "highlight_color": (20, 184, 166),
+        "title_color": (0, 0, 0),
+        "stroke_color": (255, 255, 255),
+        "layout": "single"
+    },
+    "loan-reminder": {
+        "title": "ローンリマイン",
+        "captions": [
+            {"text": "ウィジェットでホーム画面から確認", "highlight": ["ウィジェット"]},
+            {"text": "返済まであと何日か一目で確認", "highlight": ["返済", "何日"]},
+            {"text": "住宅ローン・自動車ローンなどをかんたん登録", "highlight": ["住宅ローン", "自動車ローン"]},
+            {"text": "残り元本・返済進捗をまとめて分析", "highlight": ["残り元本", "返済進捗"]},
+            {"text": "カレンダーで返済予定日を一覧", "highlight": ["カレンダー", "返済予定日"]}
+        ],
+        "bg_color": (255, 255, 255),
+        "text_color": (0, 0, 0),
+        "highlight_color": (29, 78, 216),
         "title_color": (0, 0, 0),
         "stroke_color": (255, 255, 255),
         "layout": "single"
@@ -286,8 +380,10 @@ def process_app(app_name):
 
     config = APPS[app_name]
     doc_dir = os.path.join(BASE_PROJECT_DIR, app_name, "documents")
+    if not os.path.exists(doc_dir):
+        doc_dir = os.path.join(BASE_PROJECT_DIR, app_name, "document")
     out_dir = os.path.join(BASE_PROJECT_DIR, app_name, "documents_processed")
-    
+
     # Check if documents directory exists
     if not os.path.exists(doc_dir):
         print(f"Documents directory not found for {app_name}: {doc_dir}")
@@ -726,3 +822,9 @@ if __name__ == "__main__":
     process_app("work-quest")
     process_app("hotcook-recipe")
     process_app("fire-plan")
+    process_app("sns-recipe-memo")
+    process_app("delivery-countdown")
+    process_app("eiken-countdown")
+    process_app("kanken-countdown")
+    process_app("credit-card-reminder")
+    process_app("loan-reminder")
